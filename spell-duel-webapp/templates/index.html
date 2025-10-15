@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell-Casting Duel - Web Edition</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Main Game Container -->
+        <main id="game-container">
+            <img id="video-feed" alt="Game Video Stream">
+        </main>
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <!-- Logo Section -->
+            <div id="logo">
+                <h2>⚡ Spell Duel ⚡</h2>
+                <p class="tagline">Cast spells with your hands!</p>
+            </div>
+
+            <!-- Game Status Section -->
+            <div id="status">
+                <h3>Game Status</h3>
+                
+                <div class="stat-group">
+                    <div class="stat-label">Player HP:</div>
+                    <div class="hp-bar-container">
+                        <div id="player-hp-bar" class="hp-bar"></div>
+                    </div>
+                    <div class="stat-value">
+                        <span id="player-hp">100</span> / <span id="player-max-hp">100</span>
+                    </div>
+                    <div id="player-shield-indicator" class="shield-indicator hidden">
+                        🛡️ SHIELD ACTIVE
+                    </div>
+                </div>
+
+                <div class="stat-group">
+                    <div class="stat-label">Opponent HP:</div>
+                    <div class="hp-bar-container">
+                        <div id="opponent-hp-bar" class="hp-bar"></div>
+                    </div>
+                    <div class="stat-value">
+                        <span id="opponent-hp">100</span> / <span id="opponent-max-hp">100</span>
+                    </div>
+                </div>
+
+                <div class="event-messages">
+                    <div id="last-spell" class="event-message"></div>
+                    <div id="ai-action" class="event-message ai-message"></div>
+                </div>
+
+                <div id="game-over-message" class="hidden game-over-msg"></div>
+            </div>
+
+            <!-- Controls Section -->
+            <div id="controls">
+                <h3>How to Play</h3>
+                <div class="control-item">
+                    <div class="control-icon">👆</div>
+                    <div class="control-text">
+                        <strong>Point index finger</strong> to draw spells
+                    </div>
+                </div>
+                
+                <div class="control-item">
+                    <div class="control-icon">✊</div>
+                    <div class="control-text">
+                        <strong>Make a fist</strong> to cast the spell
+                    </div>
+                </div>
+
+                <h4>Spell Shapes:</h4>
+                <div class="spell-list">
+                    <div class="spell-item">
+                        <span class="spell-shape">⚡ Zig-Zag</span>
+                        <span class="spell-effect">Lightning Bolt (20 dmg)</span>
+                    </div>
+                    <div class="spell-item">
+                        <span class="spell-shape">🛡️ Circle</span>
+                        <span class="spell-effect">Shield (blocks 1 attack)</span>
+                    </div>
+                    <div class="spell-item">
+                        <span class="spell-shape">💚 V-Shape</span>
+                        <span class="spell-effect">Heal (15 HP)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Connection Status -->
+            <div id="connection-status">
+                <span id="status-indicator" class="status-dot"></span>
+                <span id="status-text">Connecting...</span>
+            </div>
+        </aside>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
