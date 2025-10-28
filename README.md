@@ -2,6 +2,8 @@
 
 A real-time spell-casting duel game using webcam hand tracking. Draw magical shapes in the air with your finger to cast spells and defeat your opponent!
 
+### Watch the Demo Video: spell game.mp4 in the root directory
+
 ## 🎮 Available Versions
 
 This project includes **two versions** of the game:
