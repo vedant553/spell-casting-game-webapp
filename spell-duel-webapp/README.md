@@ -2,6 +2,10 @@
 
 A real-time spell-casting duel game using webcam hand tracking, now playable in your web browser! Draw magical shapes in the air with your finger to cast spells and defeat your opponent.
 
+## 🎥 Gameplay Demo
+
+https://github.com/your-username/spell-duel-webapp/raw/main/spell%20game.mp4
+
 ## Features
 
 - **Real-time WebSocket streaming** for instant game updates
